@@ -721,6 +721,14 @@ h3 {
   justify-content: center;
 }
 
+.workshop__section2_left_button {
+  width: 10rem;
+  font-family: Roboto;
+  background-color: #FCF4F0;
+  border: solid 1px #331303;
+  padding-block: 0.5rem;
+}
+
 .workshop__section2_right {
   display: flex;
   justify-content: center;
@@ -775,6 +783,14 @@ h3 {
   flex-direction: column;
   gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem);
   justify-content: center;
+}
+
+.internship__section2_left_button {
+  width: 15rem;
+  font-family: Roboto;
+  background-color: #FCF4F0;
+  border: solid 1px #331303;
+  padding: 0.5rem;
 }
 
 .internship__section2_right {
