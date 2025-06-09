@@ -21,7 +21,6 @@
         <!-- Bouton burger visible sur mobile et tablette -->
         <button id="openBtn" class="menu-burger__mobile-only" aria-label="Open menu">☰</button>
 
-<<<<<<< Updated upstream
         <!-- Menu mobile (sidenav) -->
         <div id="mySidenav" class="menu-burger__sidenav">
             <button id="closeBtn" class="menu-burger__sidenav_close-btn" aria-label="Close menu">×</button>
@@ -90,14 +89,3 @@
     }
     </script>
 </body>
-=======
-<?php
-wp_nav_menu(
-    array(
-        'theme_location' => 'main-navigation',
-        'container' => 'nav',
-        'container_class' => 'navigation',
-        'menu_class' => 'navigation__ul'
-    ));
-?>
->>>>>>> Stashed changes

@@ -72,7 +72,7 @@
 
                         <?php display_field_text('events__article_description', '', 'p', 'frontpage__section4_event_text_description'); ?>
 
-                        <?php display_field_text('frontpage__button_events', HOME_PAGE_ID, 'button', 'frontpage__section3_about_text_button', EVENTS_PAGE_ID); ?>
+                        <?php display_field_text('frontpage__button_events', HOME_PAGE_ID, 'button', 'frontpage__section4_event_text_button', EVENTS_PAGE_ID); ?>
                     </div>
                 </article>
 
