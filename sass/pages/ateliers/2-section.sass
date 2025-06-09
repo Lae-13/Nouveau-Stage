@@ -1,0 +1,131 @@
+.workshop
+    &__title
+        display: flex
+        justify-content: center
+        padding: 2rem
+
+    &__section1
+        display: grid
+        grid-template-columns: 2fr 3fr
+        gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+        padding-block: 0.5rem
+
+        &_left
+            display: flex
+            justify-content: center
+            &_image
+                height: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                width: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                object-fit: cover
+
+        &_right
+            display: flex
+            flex-direction: column
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            justify-content: center
+
+    &__section2
+        display: grid
+        grid-template-columns: 3fr 2fr
+        gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+        padding-block: 0.5rem
+
+        &_left
+            display: flex
+            flex-direction: column
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            justify-content: center
+
+        &_right
+            display: flex
+            justify-content: center
+            &_image
+                height: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                width: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                object-fit: cover
+
+.internship
+    display: flex
+    flex-direction: column
+    padding: 2rem 0 2rem 0
+
+    &__section1
+        display: grid
+        grid-template-columns: 2fr 3fr
+        gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+        padding-block: 0.5rem
+
+        &_left
+            display: flex
+            justify-content: center
+            &_image
+                height: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                width: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                object-fit: cover
+
+        &_right
+            display: flex
+            flex-direction: column
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            justify-content: center
+
+    &__section2
+        display: grid
+        grid-template-columns: 3fr 2fr
+        gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+        padding-block: 0.5rem
+
+        &_left
+            display: flex
+            flex-direction: column
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            justify-content: center
+
+        &_right
+            display: flex
+            justify-content: center
+            &_image
+                height: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                width: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                object-fit: cover
+
+@media (max-width: 768px) //format tablette
+    .workshop
+        &__section1
+            grid-template-columns: 1fr 1fr
+
+        &__section2
+            grid-template-columns: 1fr 1fr
+    .internship
+        &__section1
+            grid-template-columns: 1fr 1fr
+
+        &__section2
+            grid-template-columns: 1fr 1fr
+
+    @media (max-width: 480px) //format téléphone
+    .workshop
+        &__section1
+            grid-template-columns: 1fr
+            &_right
+                align-items: center
+
+        &__section2
+            grid-template-columns: 1fr
+            div:first-child
+                order: 2
+            &_left
+                align-items: center
+
+    .internship
+        &__section1
+            grid-template-columns: 1fr
+            &_right
+                align-items: center
+
+        &__section2
+            grid-template-columns: 1fr
+            div:first-child
+                order: 2
+            &_left
+                align-items: center

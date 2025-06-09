@@ -1,0 +1,157 @@
+<<<<<<< Updated upstream
+.menu-burger
+    display: flex
+    justify-content: space-between
+    &__mobile-only
+        display: none
+        font-size: 30px
+        cursor: pointer
+        background: none
+        border: none
+        color: #331303
+        margin: 1rem 0 0 1rem
+
+    &__image
+        display: none
+        width: 5rem
+        margin: 1rem
+
+    &__sidenav
+        display: none
+        height: 18rem
+        width: 250px
+        position: fixed
+        top: 0
+        left: -250px
+        background-color: #331303
+        transition: 0.3s ease
+        padding-top: 60px
+        z-index: 1000
+
+        nav ul
+        list-style-type: none
+        padding: 0
+        margin: 0
+
+        .menu-item
+            font-family: Roboto
+            font-weight: bold
+            margin-block: 2%
+            font-size: 1rem
+
+        li
+            padding: 12px 24px
+
+        a
+            color: #FCF4F0
+            text-decoration: none
+            display: block
+
+        .menu-item-132
+            display: none
+
+        &_close-btn
+            position: absolute
+            top: 0
+            right: 20px
+            font-size: 30px
+            color: #FCF4F0
+            background: none
+            border: none
+            cursor: pointer
+
+.lock_scroll
+    overflow: hidden
+
+.navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-block: 2rem // ajoute une marge au dessus et en dessous de la nav
+
+    &__logo
+        width: 5rem
+        margin-left: clamp(0.5rem, -4.8782rem + 8.4034vw, 3rem)
+
+    &__menu
+        display: flex
+
+    &__panier
+        width: 3rem
+        margin-right: clamp(0.5rem, -4.8782rem + 8.4034vw, 3rem)
+
+=======
+>>>>>>> Stashed changes
+.nav
+    display: flex
+    justify-content: center
+    width: 80%
+
+<<<<<<< Updated upstream
+    &__ul
+        display: flex
+        justify-content: space-between // espace les éléments de la nav
+        align-items: center
+        white-space: nowrap // garde les écritures sur une même ligne
+        text-transform: uppercase // toutes les lettres en majuscules
+        width: 100% // la nav prend 100 de la largeur
+
+        .menu-item
+            font-family: Roboto
+            font-weight: bold
+            margin-inline: clamp(0.5rem, -1.0738rem + 3.2787vw, 2rem)
+
+            a
+                text-decoration: none
+                color: #331303
+
+            &:hover
+                text-decoration: underline #331303
+
+        .menu-item-132
+            font-family: DancingScript
+            font-weight: normal
+            font-size: clamp(1rem, -0.5738rem + 3.2787vw, 2.5rem) // fait un dégrader de taille sur l'écriture lorsque la taille de l'écran se réduit
+            text-transform: capitalize
+
+@media (max-width: 1024px) //format téléphone
+
+    .menu-burger
+        &__mobile-only
+            display: block
+
+        &__sidenav
+            display: block
+
+            nav ul li
+            text-align: center
+
+            &_close-btn
+                display: block
+
+        &__image
+            display: block
+
+    .navigation
+        display: none
+=======
+    &img
+
+
+    &ul
+
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+        .menu-item
+            padding: 0.5rem
+
+
+            &:hover
+                text-decoration: underline
+
+            a
+                text-decoration: none
+                color: rgb(30,30,30)
+>>>>>>> Stashed changes

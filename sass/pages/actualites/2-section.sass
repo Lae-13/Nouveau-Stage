@@ -1,0 +1,67 @@
+.futurevents
+    &__text
+        display: flex
+        justify-content: center
+        padding: 2rem
+
+    &__article
+        display: grid
+        grid-template-columns: 1fr 2fr
+        gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+
+        &_box
+            display: flex
+            justify-content: center
+            &_image
+                height: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                width: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                object-fit: cover //permet à l'image de remplir le cadre sans être déformé
+
+        &_text
+            display: flex
+            flex-direction: column
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            justify-content: center
+
+.pastevents
+    &__text
+        display: flex
+        padding: 2rem
+
+    &__articles
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 1rem
+        margin-bottom: 5rem
+
+        &_box
+            display: flex
+            justify-content: center
+
+            &_image
+                margin-bottom: 1.5rem
+                width: clamp(8rem, 6.0519rem + 10.3896vw, 14rem)
+                height: clamp(12rem, 9.0779rem + 15.5844vw, 21rem)
+                object-fit: cover //permet à l'image de remplir le cadre sans être déformé
+                box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.192) //ombre derrière l'image
+                transition: transform 0.3s ease //transition pour le hover
+                &:hover
+                    transform: scale(1.05)
+
+@media (max-width: 1224px) //format tablette ou petit ordinateur
+    .pastevents
+        &__articles
+            grid-template-columns: 1fr 1fr 1fr //passe à 3 colonnes
+
+@media (max-width: 768px) //format tablette
+    .futurevents
+        &__article
+            grid-template-columns: 2fr 3fr
+
+@media (max-width: 550px) //format téléphone
+    .futurevents
+        &__article
+            grid-template-columns: 1fr 1fr //passe à 2 colonnes égales
+    .pastevents
+        &__articles
+            grid-template-columns: 1fr 1fr //passe à 2 colonnes

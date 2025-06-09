@@ -1,0 +1,101 @@
+.frontpage
+
+    &__slogan
+        display: flex
+        justify-content: center
+        text-align: center
+        font-family: DancingScript
+        font-size: clamp(1.2rem, 0.1535rem + 3.7209vw, 3rem)
+        padding: 2rem
+
+    &__section2
+        background-color: #BC9581
+
+        &_florence
+            display: grid
+            grid-template-columns: 1fr 2fr
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            padding-block: 2rem
+
+            &_box
+                display: flex
+                justify-content: center
+                &_image
+                    height: 20rem
+                    width: 20rem
+                    object-fit: cover //permet à l'image de remplir le cadre sans être déformé
+
+            &_text
+                display: flex
+                flex-direction: column
+                gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+                justify-content: center
+
+    &__section3
+        &_about
+            display: grid
+            grid-template-columns: 3fr 2fr
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            padding-block: 2rem
+
+            &_text
+                display: flex
+                flex-direction: column
+                gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+                justify-content: center
+
+            &_box
+                display: flex
+                justify-content: center
+                &_image
+                    height: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                    width: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                    object-fit: cover //permet à l'image de remplir le cadre sans être déformé
+
+    &__section4
+        background-color: #BC9581
+
+        &_event
+            display: grid
+            grid-template-columns: 1fr 2fr
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            padding-block: 2rem
+
+            &_box
+                display: flex
+                justify-content: center
+                &_image
+                    height: clamp(12rem, 6.1558rem + 31.1688vw, 30rem)
+                    width: clamp(8rem, 4.1039rem + 20.7792vw, 20rem)
+                    object-fit: cover //permet à l'image de remplir le cadre sans être déformé
+
+            &_text
+                display: flex
+                flex-direction: column
+                gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+                justify-content: center
+
+    &__section5
+        gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+        padding-block: 2rem
+
+        &_contact
+            display: flex
+            flex-direction: column
+            gap: clamp(0.5rem, 0.013rem + 2.5974vw, 2rem)
+            justify-content: center
+
+    @media (max-width: 768px)
+        &__section2
+            &_florence
+                grid-template-columns: 1fr
+
+        &__section3
+            &_about
+                grid-template-columns: 1fr
+                div:first-child
+                    order: 2
+
+        &__section4
+            &_event
+                grid-template-columns: 1fr

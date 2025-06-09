@@ -1,0 +1,36 @@
+# Ignore tout sauf le contenu utile
+
+# Ignorer le cœur WordPress
+/wp-admin/
+/wp-includes/
+license.txt
+readme.html
+
+# Ignorer tous les plugins sauf un plugin custom
+/wp-content/plugins/*
+!/wp-content/plugins/mon-plugin
+
+# Ignorer tous les thèmes sauf ton thème
+/wp-content/themes/*
+!/wp-content/themes/ton-theme
+
+# Fichiers à ne jamais versionner
+wp-config-sample.php
+*.log
+*.sql
+*.zip
+.DS_Store
+Thumbs.db
+
+# Fichiers générés
+node_modules/
+vendor/
+.env
+
+# Cache ou uploads
+/wp-content/cache/
+/wp-content/uploads/
+
+# Optional npm cache directory
+package-lock.json
+deno.lock

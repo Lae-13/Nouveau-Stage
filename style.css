@@ -1,0 +1,19 @@
+/* Error: Expected identifier.
+ *    ,
+ * 83 | =======
+ *    |  ^
+ *    '
+ *   sass\parts\navigation.sass 83:2  @forward
+ *   sass\parts\all.sass 1:1          @forward
+ *   sass\styles.sass 9:1             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 83 \2502  =======\d\a    \2502   ^\a    \2575 \a   sass\\parts\\navigation.sass 83:2  @forward\a   sass\\parts\\all.sass 1:1          @forward\a   sass\\styles.sass 9:1             root stylesheet";
+}
